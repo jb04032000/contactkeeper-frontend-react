@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { loadUserRequested } from "../../redux/slices/authSlice";
 import { getContactListRequested } from "../../redux/slices/contactSlice";
 import ContactForm from "../contacts/ContactForm";

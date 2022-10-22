@@ -21,7 +21,7 @@ import {
 } from "../slices/contactSlice";
 
 // worker for get contact List.
-function* workerGetContactList(action) {
+function* workerGetContactList() {
   try {
     const response = yield call(getContactList);
     const res_body = response ? response : {};

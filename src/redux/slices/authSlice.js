@@ -57,8 +57,16 @@ export const authSlice = createSlice({
     logOut: (state) => {
       setAuthToken(false);
       localStorage.removeItem("contactKeeperToken");
-      state = { ...initialState };
+      state.token = localStorage.getItem("contactKeeperToken") || "";
+      state.isAuthenticated = localStorage.getItem("contactKeeperToken")
+        ? true
+        : false;
+      state.message = "";
+      state.error = "";
+      state.loading = false;
+      state.user = [];
     },
+
     clearError: (state) => {
       state.error = "";
     },

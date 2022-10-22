@@ -73,7 +73,7 @@ const getContactsOperations = {
         contact.email.toLowerCase().includes(action.payload.toLowerCase())
     );
   },
-  clearFilteredContacts: (state, action) => {
+  clearFilteredContacts: (state) => {
     state.filteredContacts = [];
   },
 };

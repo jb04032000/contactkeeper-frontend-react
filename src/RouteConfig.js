@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from "react";
-import { Routes, Route, Redirect } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import PrivateRoute from "./components/routing/PrivateRoute";
 import { loader } from "./utils/helpers";
 import setAuthToken from "./utils/setAuthToken";
